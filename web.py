@@ -16,7 +16,7 @@ def index():
 
 	if ip_location == "Undefined":
 		ip_location = "Mars"
-	return render_template("index.html", ip_location=ip_location)
+	return render_template("index.html", ip_location=ip_location, ip=ip)
 
 @app.route("/about")
 def about():
