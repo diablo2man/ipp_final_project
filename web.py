@@ -32,7 +32,7 @@ def results():
 		error_msg = "No keywords entered"
 	else:
 		gif_list = g.search_list(keyword)
-	return render_template("results.html", gif_list = gif_list, error_msg=error_msg)
+	return render_template("results.html", gif_list = gif_list, error_msg=error_msg, keyword=keyword)
 
 
 if __name__ == "__main__":

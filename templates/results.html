@@ -26,7 +26,7 @@
         <div class="jumbotron">
             <div class="container">
                 {% if error_msg == "": %}
-                    <h1>GIFs tagged with "cats"</h1>
+                    <h1>GIFs tagged with {{ keyword }}</h1>
                 {% else: %}
                     <h1>{{error_msg}}</h1>
                 {% endif %}
